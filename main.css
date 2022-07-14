@@ -327,6 +327,36 @@ footer {
   background-color: var(--blue);
 }
 
+.live-now-header {
+  position: absolute;
+  top: -4rem;
+}
+
+.live-now {
+  position: absolute;
+  pointer-events: auto;
+  overflow: hidden;
+  height: fit-content;
+  width: fit-content;
+}
+.pos1 {
+  left: 1rem;
+  top: 2rem;
+}
+.pos1 img {
+  width: 60vw;
+
+
+}
+.pos2 {
+  right: 5rem;
+  bottom: 5rem;
+}
+.pos2 img {
+  width: 30vmin;
+
+
+}
 
 footer .content {
 
@@ -374,6 +404,25 @@ footer .main-heading::before {
   bottom: 0;
   left: 0;
  }
+ .pos1 {
+  left: 1rem;
+  top: 4rem;
+}
+.pos1 img {
+  width: 90vw;
+
+
+}
+.pos2 {
+  right: 1rem;
+  bottom: 3rem;
+  top:auto;
+}
+.pos2 img {
+  width: 50vmin;
+
+
+}
 }
 @media screen and (max-width: 900px) {
   .flex-mobile {
@@ -417,6 +466,8 @@ footer .main-heading::before {
     animation-duration: calc(var(--duration) - 3s);
    }
  }
+
+
 @media screen  and (min-width: 901px) {
   .main-subtitle {
     font-size: 1.2rem;
