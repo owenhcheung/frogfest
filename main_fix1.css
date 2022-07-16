@@ -340,14 +340,23 @@ footer {
   width: fit-content;
 }
 .pos1 {
-  left: 1rem;
+  left: 5rem;
   top: 2rem;
 }
 .pos1 picture, .pos1 img {
-  width: 60vw;
   height: auto;
-
+  width: 100vmin;
 }
+.close-now {
+  background: #FFF8C0;
+  padding: 4px;
+  width: fit-content;
+  border: 1px solid black;
+  border-radius: 1px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .pos2 {
   right: 5rem;
   bottom: 5rem;

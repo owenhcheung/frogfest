@@ -6,100 +6,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="MUSIC JOY SPREAD HAPPINESS IN WORLD">
     <title>FROGFEST 2022</title>
-    
+
     <link rel="stylesheet" href="normalize.min.css">
     <link rel="stylesheet" href="locomotive-scroll.min.css">
 
-    <link rel="stylesheet" href="main_fix.css">
+    <link rel="stylesheet" href="main_fix1.css">
 
 </head>
 
-<body >
+<body>
     <header class="flex space-between">
-        <p class="scrollBanner top" id="stickyTop"  aria-hidden="true">
-            WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  
-            WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  
+        <p class="scrollBanner top" id="stickyTop" aria-hidden="true">
+            WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE FINALLY HERE <span
+                class="smile">☺</span> WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE
+            FINALLY HERE <span class="smile">☺</span>
+            WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE FINALLY HERE <span
+                class="smile">☺</span> WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE
+            FINALLY HERE <span class="smile">☺</span>
 
         </p>
-     
-        <a class="live-now pos1" href="https://www.twitch.tv/slyleaf" aria-label="join now on twitch">
-            <picture >
-                <source srcset="live1.webp" type="image/webp">
-                <source srcset="live1.jpg" type="image/jpeg"> 
-                <img class="poster" src="live1.jpg" alt="join frogfest on twitch banner ad">
-              </picture>
-        </a>
-        <a class="live-now pos2" href="https://www.twitch.tv/slyleaf" aria-label="join now on twitch">
-            <picture >
-                <source srcset="live2.webp" type="image/webp">
-                <img class="poster" src="live2.jpg" alt="join frogfest on twitch banner ad 2">
-              </picture>
-        </a>
-        <div class="flex-grow flex"  >
-            <div class="marquee marquee-vertical flex-grow" height="100%" width="100%" >
+        <div class="live-now pos1" id="postlive">
+            <a class="" href="https://soundcloud.com/frogfest-2022/tracks"
+                aria-label="recorded set avaiable on soundcloud">
+                <picture>
+                    <source srcset="postevent.webp" type="image/webp">
+                    <source srcset="postevent.jpg" type="image/jpeg">
+                    <img class="poster" src="postevent.jpg" alt="banner ad for soundcloud recorded sets">
+                </picture>
+            </a>
+            <p class="close-now" onclick="removeDiv()">
+                <span style="margin-right: 1rem;">x</span>close this annoying image
+            </p>
+
+        </div>
+
+        <div class="flex-grow flex">
+            <div class="marquee marquee-vertical flex-grow" height="100%" width="100%">
                 <div class="marquee" width="100%" height="100%">
-                   <div class="frog__wrapper relative">
-                   
-                    <img class="frog" id="frog" alt="pixelated frog on lilypad gif" onclick="playCroak()" onkeydown="playCroak()" src="froggy.gif" />
-                    <div class="tooltip" id="tooltip" onclick="playCroak()" onkeydown="playCroak()">
-                        <div class="tooltip__header">                     
-                            <p class="bold">Froggy Tip!</p> <p class="exit" aria-hidden="true" >x</p>
-                        </div>                   
-                        <p>Did you know you can scroll down to see the <i>wacky</i> lineup?? :D</p>
-                   </div>
-                   </div>
-                   
+                    <div class="frog__wrapper relative">
+
+                        <img class="frog" id="frog" alt="pixelated frog on lilypad gif" onclick="playCroak()"
+                            onkeydown="playCroak()" src="froggy.gif" />
+                        <div class="tooltip" id="tooltip" onclick="playCroak()" onkeydown="playCroak()">
+                            <div class="tooltip__header">
+                                <p class="bold">Froggy Tip!</p>
+                                <p class="exit" aria-hidden="true">x</p>
+                            </div>
+                            <p>Did you know you can scroll down to see the <i>wacky</i> lineup?? :D</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
-       
+
         <p class="scrollBanner bot androidsticky" id="stickyBot" aria-hidden="true">
-            WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  
-            WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  WELCOME TO FROGFEST 2022 <span class="smile">☺</span>  WE'RE SO GLAD YOU'RE FINALLY HERE <span class="smile">☺</span>  
+            WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE FINALLY HERE <span
+                class="smile">☺</span> WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE
+            FINALLY HERE <span class="smile">☺</span>
+            WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE FINALLY HERE <span
+                class="smile">☺</span> WELCOME TO FROGFEST 2022 <span class="smile">☺</span> WE'RE SO GLAD YOU'RE
+            FINALLY HERE <span class="smile">☺</span>
 
         </p>
     </header>
-    <main data-scroll-container  class="bold" >
+    <main data-scroll-container class="bold">
 
-        <section class="landing flex space-between flex-mobile" data-scroll-section >
-           
-            <div class="landing__edges normal underline text-center"  data-scroll data-scroll-speed="-1">
+        <section class="landing flex space-between flex-mobile" data-scroll-section>
+
+            <div class="landing__edges normal underline text-center" data-scroll data-scroll-speed="-1">
                 <p class="">PRIMAL LAMIA</p>
             </div>
-            <div class="landing__logo flex flex-col"  data-scroll data-scroll-speed="-3">
+            <div class="landing__logo flex flex-col" data-scroll data-scroll-speed="-3">
                 <div class="toptext text-center relative ">
-                    <h3 class="live-now-header"><span class="smile" aria-hidden="true">☺&#xFE0E;</span><a href="https://www.twitch.tv/slyleaf">LISTEN IN NOW TWITCH NOW</a></h3>
                     <h2 class="normal main-flavor">THIS REALLY IS THE FINAL FANTASY 14</h2>
                     <h2 class="normal main-flavor">MUSIC JOY SPREAD HAPPINESS IN WORLD</h2>
                 </div>
                 <div class="relative">
-                    <h1 class="main-heading text-center" >frogfest 2022</h1>
+                    <h1 class="main-heading text-center">frogfest 2022</h1>
                 </div>
-                
-                <div class="flex space-between main-subtitle" >
-                    <h2  data-scroll data-scroll-speed="0.6">JULY 15TH</h2>
+
+                <div class="flex space-between main-subtitle">
+                    <h2 data-scroll data-scroll-speed="0.6">JULY 15TH</h2>
                     <h2 data-scroll data-scroll-speed="0.6">8PM PST</h2>
                     <h2 data-scroll data-scroll-speed="0.6" class="hide-mobile">(248)-434-5508</h2>
                 </div>
             </div>
             <div class="landing__edges normal underline text-center" data-scroll data-scroll-speed="-1">
                 <div>
-                    <p >SHIROGANE WARD 21 </p>
+                    <p>SHIROGANE WARD 21 </p>
                     <p>PLOT 37</p>
 
                 </div>
-              
+
+            </div>
+        </section>
+        <section class="landing flex space-between flex-mobile" style="align-items: flex-start;" data-scroll-section>
+
+            <div>
+
+            </div>
+            <div class="landing__logo flex flex-col" data-scroll data-scroll-speed="-3">
+                <div class="toptext text-center relative ">
+                    <h2 class="normal main-flavor">THANK YOU FOR EVERYTHING</h2>
+                    <h2 class="normal main-flavor">THANK U FOR ATTENDING FROGFEST 2022</h2>
+                </div>
+                <div class="relative ">
+                    <h1 class="text-center" style="font-size: 2rem; max-width: 17em; margin: 2rem 0">SETLIST AND RECORDED SETS ON SOUNDCLOUD.COM WEBSITE</h1>
+                </div>
+
+                <div class=" main-subtitle ">
+                    <h2 data-scroll data-scroll-speed="0.6" class="text-center"> 
+                        <a
+                            href="https://soundcloud.com/frogfest-2022/tracks">https://soundcloud.com/frogfest-2022/tracks</a>
+                    </h2>
+
+                </div>
+            </div>
+
+            <div>
+                
             </div>
         </section>
         <!---->
         <section data-scroll-section class="" id="fuck">
-            <div class="grid flex-mobile flex-col" >
-                <div class="deeznuts" data-scroll >
-                    <div class="textblock" id="stickytext" data-scroll-sticky data-scroll-target="#fuck"  data-scroll data-scroll-speed="2">
+            <div class="grid flex-mobile flex-col">
+                <div class="deeznuts" data-scroll>
+                    <div class="textblock" id="stickytext" data-scroll-sticky data-scroll-target="#fuck" data-scroll
+                        data-scroll-speed="2">
                         <!--<p><span class="smile">☺</span></p>-->
                         <p>
-                            VAPOR CRUISE · DJ GNOMUSSY <span class="b2b">B2B</span> SAD BOY WITH A LAPTOP · CAT WAP <span class="b2b">B2B</span>
-                            DEEJ NUTS <span class="b2b">B2B</span> DJ GAS LIGHT · RONSROGUE · COFFEEKEV · G'RAHA'S TIA · 
+                            VAPOR CRUISE · DJ GNOMUSSY <span class="b2b">B2B</span> SAD BOY WITH A LAPTOP · CAT WAP
+                            <span class="b2b">B2B</span>
+                            DEEJ NUTS <span class="b2b">B2B</span> DJ GAS LIGHT · RONSROGUE · COFFEEKEV · G'RAHA'S TIA ·
                             SLEEF <span class="b2b">B2B</span> KENITHMA <span class="b2b">B2B</span> MOONMUNCH
                         </p>
                         <span class="pad"></span>
@@ -109,28 +148,27 @@
                         </p>
                         <span class="pad"></span>
                         <p>
-                            STREAMED LIVE ON <span class="smile" aria-hidden="true">☺&#xFE0E;</span><a href="https://www.twitch.tv/slyleaf">TWITCH</a>
+                            STREAMED LIVE ON <span class="smile" aria-hidden="true">☺&#xFE0E;</span><a
+                                href="https://www.twitch.tv/slyleaf">TWITCH</a>
                         </p>
                     </div>
                 </div>
-                <div id="poster" data-scroll data-scroll-speed="-3" style="position: relative; width: fit-content;" >
-                    <picture >
+                <div id="poster" data-scroll data-scroll-speed="-3" style="position: relative; width: fit-content;">
+                    <picture>
                         <source srcset="poster.webp" type="image/webp">
-                        <source srcset="poster.jpg" type="image/jpeg"> 
+                        <source srcset="poster.jpg" type="image/jpeg">
                         <img class="poster" src="poster.jpg" alt="frogfest lineup promotional poster">
-                      </picture>
+                    </picture>
                 </div>
-            
+
             </div>
-         
+
         </section>
         <!---->
         <section data-scroll-section class="video">
             <!--https://www.youtube.com/watch?v=9-QQTkhuvWE&ab_channel=catnaps-->
             <div class="vidwrapper" data-scroll data-scroll-speed="1">
-                <iframe
-                    title="frogfest 2022 promotional video"
-                    src="https://www.youtube.com/embed/9-QQTkhuvWE">
+                <iframe title="frogfest 2022 promotional video" src="https://www.youtube.com/embed/9-QQTkhuvWE">
                 </iframe>
             </div>
         </section>
@@ -138,13 +176,17 @@
             <div class="overlay"></div>
             <div data-scroll class="content">
                 <h1 class="main-heading text-center">frogfest 2022</h1>
-                <p data-scroll data-scroll-speed="0.3" class="footertext">FROG FC · PRIMAL LAMIA · SHIROGANE WARD 21 PLOT 37</p>
-                <p data-scroll data-scroll-speed="0.3" class="footertext"><span class="smile" aria-hidden="true">☺&#xFE0E;</span> MUSIC JOY SPREAD HAPPINESS IN WORLD <span class="smile" aria-hidden="true">☺&#xFE0E;</span></p>
-                <p data-scroll data-scroll-speed="0.3" style="margin-top: 4rem" class="footertext normal">colored with crayons by <a class="m-block" href="https://artsandcrafts.work">ARTS+CRAFTS ©</a></p>
+                <p data-scroll data-scroll-speed="0.3" class="footertext">FROG FC · PRIMAL LAMIA · SHIROGANE WARD 21
+                    PLOT 37</p>
+                <p data-scroll data-scroll-speed="0.3" class="footertext"><span class="smile"
+                        aria-hidden="true">☺&#xFE0E;</span> MUSIC JOY SPREAD HAPPINESS IN WORLD <span class="smile"
+                        aria-hidden="true">☺&#xFE0E;</span></p>
+                <p data-scroll data-scroll-speed="0.3" style="margin-top: 4rem" class="footertext normal">colored with
+                    crayons by <a class="m-block" href="https://artsandcrafts.work">ARTS+CRAFTS ©</a></p>
             </div>
         </footer>
     </main>
-   
+
 </body>
 <script src="locomotive-scroll.min.js"></script>
 <script>
@@ -153,7 +195,7 @@
     const tooltip = document.querySelector('#tooltip')
     const tooltip1 = document.querySelector('#tooltip1')
 
-   
+
 
     function hide() {
         tooltip.style.visibility = 'hidden';
@@ -166,15 +208,23 @@
         console.log("sdasd")
         hide();
     }
-
+    function removeDiv() {
+            postlive.style.display = 'none';
+        }
     function init() {
+        //this is really bad code dont look <3
         const stickyTop = document.querySelector('#stickyTop')
         const stickyBot = document.querySelector('#stickyBot')
         const textbox = document.querySelector('#stickytext')
         const post = document.querySelector('#poster')
         const r = document.querySelector(':root');
+        const postlive = document.querySelector('#postlive')
+
         var w;
         var h;
+
+   
+
         const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
         if (isIOS) {
             stickyBot.classList.remove('androidsticky')
@@ -182,18 +232,18 @@
 
         var resizeTimer;
 
-        window.addEventListener('resize', function(event) {
+        window.addEventListener('resize', function (event) {
 
             clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(function() {
+            resizeTimer = setTimeout(function () {
                 w = document.documentElement.clientWidth || window.innerWidth;
 
                 if (w <= 900) {
                     textbox.removeAttribute("data-scroll-sticky");
                     textbox.removeAttribute("data-scroll-target");
-                    post.setAttribute("data-scroll-speed","1");
+                    post.setAttribute("data-scroll-speed", "1");
 
-                }  
+                }
             }, 200);
 
         });
@@ -201,22 +251,22 @@
         if (w <= 900) {
             textbox.removeAttribute("data-scroll-sticky");
             textbox.removeAttribute("data-scroll-target");
-            post.setAttribute("data-scroll-speed","1");
+            post.setAttribute("data-scroll-speed", "1");
 
-        } 
+        }
         var scroll = new LocomotiveScroll({
             el: document.querySelector('[data-scroll-container]'),
             smooth: true,
-           // smartphone: { smooth: true },
-            
-           
+            // smartphone: { smooth: true },
+
+
             reloadOnContextChange: true
         });
         scroll.on('scroll', (args) => {
             const elementW = stickyBot.offsetWidth
 
-            const progress = (args.scroll.y / args.limit.y ) 
-            const half = progress *(w / elementW) * 100
+            const progress = (args.scroll.y / args.limit.y)
+            const half = progress * (w / elementW) * 100
             stickyBot.style.transform = `translate3d(calc(-50% + ${half}%), 0, 0)`
             stickyTop.style.transform = `translate3d(-${half}%, 0, 0)`
 
@@ -227,4 +277,5 @@
 
     document.addEventListener("load", init());
 </script>
+
 </html>
