@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="normalize.min.css">
     <link rel="stylesheet" href="locomotive-scroll.min.css">
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main_fix.css">
 
 </head>
 
@@ -23,10 +23,17 @@
         </p>
      
         <a class="live-now pos1" href="https://www.twitch.tv/slyleaf" aria-label="join now on twitch">
-            <img alt="join frogfest on twitch banner ad" src="./live1.jpg" />
+            <picture >
+                <source srcset="live1.webp" type="image/webp">
+                <source srcset="live1.jpg" type="image/jpeg"> 
+                <img class="poster" src="live1.jpg" alt="join frogfest on twitch banner ad">
+              </picture>
         </a>
         <a class="live-now pos2" href="https://www.twitch.tv/slyleaf" aria-label="join now on twitch">
-            <img alt="another join frogfest on twitch banner ad" src="./live2.jpg" />
+            <picture >
+                <source srcset="live2.webp" type="image/webp">
+                <img class="poster" src="live2.jpg" alt="join frogfest on twitch banner ad 2">
+              </picture>
         </a>
         <div class="flex-grow flex"  >
             <div class="marquee marquee-vertical flex-grow" height="100%" width="100%" >

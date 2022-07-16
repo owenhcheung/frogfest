@@ -343,18 +343,18 @@ footer {
   left: 1rem;
   top: 2rem;
 }
-.pos1 img {
+.pos1 picture, .pos1 img {
   width: 60vw;
-
+  height: auto;
 
 }
 .pos2 {
   right: 5rem;
   bottom: 5rem;
 }
-.pos2 img {
+.pos2 picture, .pos2 img {
   width: 30vmin;
-
+  height: auto;
 
 }
 
